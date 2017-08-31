@@ -1,0 +1,8 @@
+<p-autoComplete [ngModel]="track" [suggestions]="tracks" (completedMethod)="search($event)" (onSelect)="select($event)" (onSelect)="select($event)" field="title" >
+	<template let-track>
+		<div class="ui-helper-clearfix" style="borer-bottom:1px soid #D5D5D5">
+			<img src="[{track.artwork_url}}" class="artwork"/>
+			<div class="text truncate">{{track.title}}</div>
+		</div>
+	</template>
+</p-autoComplete>
