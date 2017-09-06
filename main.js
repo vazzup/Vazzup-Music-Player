@@ -1,7 +1,7 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
-require('electron-reload')(__dirname)
+require('electron-reload')(__dirname, {electron: require('${__dirname}/../../node_modules/electron')});
 
 require('dotenv').config();
 
@@ -23,7 +23,7 @@ app.on('ready', () => {
 		win.loadURL(process.env.HOST);
 		// Show dev tools
 		// Remove this line before distributing
-		win.webContents.openDevTools();
+		// win.webContents.openDevTools();
 	}
 	
 	// Remove window once app is closed

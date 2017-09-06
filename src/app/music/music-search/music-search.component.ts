@@ -3,8 +3,8 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 @Component({
 	// Define Component
 	selector: 'music-search',
-	templateurl: './music-search.component.html',
-	styleUrls: ['./music-search.component.css']
+	templateUrl: './music-search.component.html',
+	styleUrls: ['./music-search.component.css'],
 })
 
 export class MusicSearchComponent {
